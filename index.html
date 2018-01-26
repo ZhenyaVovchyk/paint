@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+  <title>Paint</title>
+  <link rel="icon" href="123.png" type="image/x-icon">
+<script src="paint.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="paint.css">
+   <script>
+    window.name="source"
+    
+     function launchEditor() {
+     editor = window.open("1.html", "editor", "height=310, width=350")
+     }
+     
+     function viewPage() {
+      view = window.open("", "view")
+      view.document.open()
+      view.document.write(document.forms[0]. elements[0].value)
+      view.document.close()
+      }
+     
+   </script>
+ </head>
+ <body>
+<div class="w3-display-bottommiddle">
+<input type="radio" name="color" value="Red"> 
+<input type="radio" name="color" value="Purple">
+<input type="radio" name="color" value="Indigo">
+<input type="radio" name="color" value="LightBlue">
+<input type="radio" name="color" value="Aqua">
+<input type="radio" name="color" value="Green">
+<input type="radio" name="color" value="Lime">
+<input type="radio" name="color" value="lightblue">
+<input type="radio" name="color" value="white">
+<input type="radio" name="color" value="Gray">
+<input type="radio" name="color" value="PaleRed">
+<input type="radio" name="color" value="PaleGreen">
+<input type="radio" name="color" value="Pink">
+<input type="radio" name="color" value="black"> 
+<input type="radio" name="color" value="Blue"> 
+<input type="radio" name="color" value="Cyan"> 
+<input type="radio" name="color" value="Teal">
+<input type="radio" name="color" value="LightGreen"> 
+<input type="radio" name="color" value="Yellow"> 
+<input type="radio" name="color" value="orange">  
+<input type="radio" name="color" value="LightGray"> 
+<input type="radio" name="color" value="DarkGray">
+</div>
+
+
+ <div class="w3-dropdown-hover w3-right ">
+            <button class="w3-button w3-black ">Fonts colos</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border " style="right:0 ">
+                <center><img src="123.png"></center>
+                  <center>
+                    <div class="w3-bar ">
+                    <script>createPaint(document.body);</script>
+                        <center>
+                            <button class="w3-button w3-deep-purple " onClick="viewPage() ">Create</button>
+                            <button class="w3-button w3-amber "><a href="index.html ">Reset</a></button>
+                        </center>
+                    </div>
+                    <br>
+                    <form>
+                        <textarea id="textarea " cols="100 " rows="19 ">
+                            <!DOCTYPE html>
+                            <html lang="en ">
+                            <head>
+                                <meta charset="UTF-8 ">
+                                <title>NotBadWebPad</title>
+                                <style>
+                                    html, body, h1, h2, h3, h4, h5, h6 {
+                                        font-family: "Comic Sans MS ", cursive, sans-serif;
+                                        font-size: 20px;
+                                    }
+                                </style>
+                            </head>
+
+                            <body>
+                                <center><h1>Use your imagenation</h1></center>
+                                <center><h3>Create and test your web page...</h3></center>
+                            </body>
+                        </html>
+                    </textarea>
+                </form>
+            </center>
+ 
+  </div>
+ 
+ 
+ 
+
+  
+
+<script>
+  var buttons = document.getElementsByName("color");
+  function setColor(event) {
+    document.body.style.background = event.target.value;
+  }
+  for (var i = 0; i < buttons.length; i++)
+    buttons[i].addEventListener("change", setColor);
+</script>
+
+
+</body>

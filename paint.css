@@ -1,0 +1,26 @@
+.picturepanel {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0px solid white;
+  overflow: auto;
+  position: relative;
+  background-size: cover;
+ box-shadow: 5px 10px red:
+  border-style: none;
+  background-repeat: no-repeat;
+   height: auto;
+}
+.picturepanel canvas { display: block; }
+.toolbar > * {
+margin-right: 50px;
+border-style: none;
+ }
+
+body {
+  background-image: url(#);
+  backgroung-size: cover;
+}
